@@ -3,7 +3,7 @@ import Item from "./Item";
 export default function ItemList({ items, onDeleteItem, onToggleItems }) {
   return (
     <div className="list">
-      <li>
+      <ul>
         {items.map((item) => (
           <Item
             item={item}
@@ -12,7 +12,7 @@ export default function ItemList({ items, onDeleteItem, onToggleItems }) {
             onToggleItems={onToggleItems}
           />
         ))}
-      </li>
+      </ul>
     </div>
   );
 }
